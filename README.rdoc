@@ -1,4 +1,4 @@
-= google-ime-skk
+= google-suggest-skk
 
 Google Suggest SKK Server
 
