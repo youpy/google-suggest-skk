@@ -1,4 +1,5 @@
 require 'google-ime-skk'
+require 'google-suggest-skk'
 require 'optparse'
 require 'ostruct'
 
@@ -49,7 +50,7 @@ module GoogleImeSkk::CLI
       end
     end
 
-    ime = GoogleImeSkk.new(opts.host, opts.port, opts.proxy, opts.cache_time)
+    ime = GoogleSuggestSkk.new(opts.host, opts.port, opts.proxy, opts.cache_time)
     ime.mainloop
   end
 end
