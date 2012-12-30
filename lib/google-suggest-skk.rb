@@ -36,11 +36,9 @@ class GoogleSuggestSkk < SocialSKK
         # encoding of the response is Shift_JIS
         res = h.get("/complete/search?client=hp&hl=ja&q=" + CGI.escape(text))
         content = encode_to_utf8(res.body, 'Shift_JIS').sub(/^[^\(]+\((.+)\)$/, '\1')
-        puts content
         obj = JSON.parse(content)
         obj.shift
         encode_to_eucjp(obj[0].map do |item|
-            puts item[0]
             item[0]
           end.join('/'))
       end
