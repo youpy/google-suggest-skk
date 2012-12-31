@@ -1,6 +1,8 @@
-= google-ime-skk
+= google-suggest-skk
 
-Google IME SKK Server
+Google Suggest SKK Server
+
+http://dl.dropbox.com/u/334064/google-suggest-ime.gif
 
 == Run:
 
